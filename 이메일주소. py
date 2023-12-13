@@ -1,0 +1,30 @@
+import re
+
+def check_email(email):
+    # 이메일 주소를 체크하는 정규표현식
+    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    
+    # re.search()를 사용하여 정규표현식 매칭 확인
+    if re.search(pattern, email):
+        return True
+    else:
+        return False
+
+# 샘플 이메일 주소 10개
+sample_emails = [
+    'user@example.com',
+    'john.doe@company.co',
+    'alice.smith123@gmail.com',
+    'info@website.org',
+    'support@company.net',
+    'name.lastname@domain.info',
+    '1234@test-server.co',
+    'user@localhost',
+    'test_email@sub.domain',
+    'invalid-email'
+]
+
+# 각 이메일 주소에 대한 체크 및 결과 출력
+for email in sample_emails:
+    result = check_email(email)
+    print(f'{email}: {"Valid" if result else "Invalid"}')
