@@ -90,12 +90,12 @@
    <slot>firstClick()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>187</x>
-     <y>214</y>
+     <x>77</x>
+     <y>210</y>
     </hint>
     <hint type="destinationlabel">
-     <x>149</x>
-     <y>272</y>
+     <x>151</x>
+     <y>259</y>
     </hint>
    </hints>
   </connection>
